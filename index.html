@@ -1,0 +1,11 @@
+You should see a popup.
+
+<script>
+navigator.mediaDevices.getUserMedia(constraints)
+.then(function(stream) {
+  alert("Video Camera exposed")
+})
+.catch(function(err) {
+  alert("Video Camera blocked")
+});
+</script>
