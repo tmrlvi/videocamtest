@@ -1,11 +1,14 @@
 You should see a popup.
+Video camera status: <span id="status">Pending ...</span>
 
 <script>
 navigator.mediaDevices.getUserMedia({"video": true, "audio": false})
 .then(function(stream) {
+  document.getElementById("status").innerHTML = "Video Camera exposed"
   alert("Video Camera exposed")
 })
 .catch(function(err) {
+  document.getElementById("status").innerHTML = "Video Camera exposed"
   alert("Video Camera blocked")
 });
 </script>
