@@ -1,7 +1,7 @@
 You should see a popup.
 
 <script>
-navigator.mediaDevices.getUserMedia(constraints)
+navigator.mediaDevices.getUserMedia({"video": true, "audio": false})
 .then(function(stream) {
   alert("Video Camera exposed")
 })
