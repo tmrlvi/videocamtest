@@ -8,7 +8,7 @@ navigator.mediaDevices.getUserMedia({"video": true, "audio": false})
   alert("Video Camera exposed")
 })
 .catch(function(err) {
-  document.getElementById("status").innerHTML = "Video Camera exposed"
+  document.getElementById("status").innerHTML = "Video Camera blocked"
   alert("Video Camera blocked")
 });
 </script>
